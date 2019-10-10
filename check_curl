@@ -478,7 +478,7 @@ if ($Pocet > 1) {
             $message = '[WARNING] ' . $message;
             break;
         case 2:
-            $message = '[CRITICA] ' . $message;
+            $message = '[CRITICAL] ' . $message;
             break;
         case 3:
         	$message = '[UNKNOWN] ' . $message;
