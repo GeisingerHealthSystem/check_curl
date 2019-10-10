@@ -475,16 +475,16 @@ if ($Pocet > 1) {
 	$message = (isset($tag)) ? $tag." - ".$message : $message;
 	switch ($Status) {
         case 1:
-            $message = 'WARNING - ' . $message;
+            $message = '[WARNING] ' . $message;
             break;
         case 2:
-            $message = 'CRITICAL - ' . $message;
+            $message = '[CRITICA] ' . $message;
             break;
         case 3:
-        	$message = 'UNKNOWN - ' . $message;
+        	$message = '[UNKNOWN] ' . $message;
         	break;
         default:
-            $message = 'OK - ' . $message;
+            $message = '[OK] ' . $message;
     		$Status  = 0;
             break;
     }
